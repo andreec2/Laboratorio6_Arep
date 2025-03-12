@@ -1,0 +1,41 @@
+<!-- user.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario - Sistema de Gestión de Usuarios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Panel de Usuario</h1>
+        <div class="user-info">
+            <span id="username-display"></span>
+            <button id="logout-btn" class="btn btn-secondary">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="users-section">
+            <h2>Usuarios Registrados</h2>
+            <div id="users-list" class="users-table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Rol</th>
+                    </tr>
+                    </thead>
+                    <tbody id="users-table-body">
+                    <!-- Los usuarios se cargarán dinámicamente aquí -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/user.js"></script>
+</body>
+</html>
